@@ -18,6 +18,7 @@ hidden = false
 # p = "paste_clipboard_before"
 "}" = "goto_next_paragraph"   # next empty line / paragraph
 "{" = "goto_prev_paragraph"   # previous empty line / paragraph
+X = "select_line_above"
 
 [keys.insert]
 j = { k = "normal_mode" }

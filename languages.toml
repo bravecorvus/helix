@@ -16,8 +16,8 @@ language-servers = [ "vscode-css-language-server", "tailwindcss-ls" ]
 
 [[language]]
 name = "go"
-roots = ["go.work", "go.mod"]
 auto-format = true
-formatter = ["gofmt"]
-comment-token = "//"
-language-servers = [ "gopls" ]
+formatter = { command = "goimports" }
+
+[language-server.gopls.config]
+"formatting.gofumpt" = true
