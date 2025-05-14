@@ -26,3 +26,37 @@ formatter = { command = "goimports" }
 command = "clippy"
 [language-server.rust-analyzer.config.cargo]
 features = "all"
+
+
+[[language]]
+name = "javascript"
+language-servers = [
+  "typescript-language-server", # optional
+  "vscode-eslint-language-server",
+]
+formatter = { command = "npx", args = ["prettier", "--parser", "typescript"] }
+
+[[language]]
+name = "jsx"
+language-servers = [
+  "typescript-language-server",
+  "vscode-eslint-language-server",
+]
+formatter = { command = "npx", args = ["prettier", "--parser", "typescript"] }
+
+[[language]]
+name = "typescript"
+language-servers = [
+  "typescript-language-server",
+  "vscode-eslint-language-server",
+]
+formatter = { command = "npx", args = ["prettier", "--parser", "typescript"] }
+
+[[language]]
+name = "tsx"
+language-servers = [
+  "typescript-language-server",
+  "vscode-eslint-language-server",
+]
+
+formatter = { command = "npx", args = ["prettier", "--parser", "typescript"] }

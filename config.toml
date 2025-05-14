@@ -20,6 +20,8 @@ hidden = false
 "}" = "goto_next_paragraph"   # next empty line / paragraph
 "{" = "goto_prev_paragraph"   # previous empty line / paragraph
 X = "select_line_above"
+C-e = ["align_view_bottom", "move_line_down", "move_line_down", "move_line_down" ]
+C-y = ["align_view_top", "move_line_up", "move_line_up", "move_line_up" ]
 
 [keys.insert]
 j = { k = "normal_mode" }
