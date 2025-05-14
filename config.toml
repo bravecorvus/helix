@@ -3,6 +3,7 @@ theme = "gruvbox"
 [editor]
 line-number = "relative"
 mouse = false
+bufferline = "always"
 
 # [editor.cursor-shape]
 # insert = "bar"
