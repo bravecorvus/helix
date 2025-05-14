@@ -21,3 +21,8 @@ formatter = { command = "goimports" }
 
 [language-server.gopls.config]
 "formatting.gofumpt" = true
+
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+[language-server.rust-analyzer.config.cargo]
+features = "all"
